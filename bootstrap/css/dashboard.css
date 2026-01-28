@@ -1,0 +1,136 @@
+/* Custom styles for Dashboard */
+
+/* Navbar custom */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Card custom */
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    border: none;
+}
+
+/* Table custom */
+.table-responsive {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: linear-gradient(135deg, #198754 0%, #157347 100%);
+}
+
+.table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(25, 135, 84, 0.05);
+}
+
+/* Button custom */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge custom */
+.badge {
+    padding: 0.4em 0.8em;
+    font-weight: 500;
+}
+
+/* Form controls */
+.form-control:focus,
+.form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: #198754;
+    border-radius: 6px;
+    margin: 0 3px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .navbar-brand div {
+        font-size: 0.85rem !important;
+    }
+    
+    .navbar-brand div:last-child {
+        font-size: 0.6rem !important;
+    }
+    
+    .navbar-text {
+        font-size: 0.85rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table {
+        font-size: 0.85rem;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem;
+    }
+    
+    .btn-sm {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
